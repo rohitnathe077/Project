@@ -5,7 +5,7 @@ public class  hotel {
         Scanner S1 = new Scanner(System.in);
         System.out.println("\\\\=========================================================================////");
 
-        System.out.println("             <||     Welcome To Hotel ching dabag dam dam     ||>"                );
+        System.out.println("             <||     Welcome To Hotel Aaisaheb     ||>"                );
 
         System.out.println("\\\\=========================================================================////");
         do{
