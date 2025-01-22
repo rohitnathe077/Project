@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Indian Army</title>
+    <link rel="stylesheet" href="./project.css">
+    <link rel="stylesheet" href="./contect.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+       <!-- Header -->
+       <header class="header">
+        <a href="#" class="logo">
+            <img src="./img/logo4.jpg" alt="Indian Army Logo">
+        </a>
+
+        <nav class="navbar" role="navigation">
+            <a href="project.html" aria-label="Home ">Home </a>
+            <a href="About.html" aria-label="About ">About </a>
+            <a href="Gallery.html" aria-label="Gallery">Gallery</a>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Pages <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="registration.html">Registration</a>
+                    <a href="login.html">Login</a>
+                </div>
+            </li>
+            <a href="Blog.html" aria-label="Blog">Blog</a>
+            <a href="Contact.html" aria-label="Contact">Contact Us</a>
+        </nav>
+
+        <div class="icons">
+            <i class="fa-solid fa-magnifying-glass" aria-label="Search"></i>
+            <i class="fa-solid fa-headset" id="headset-btn" aria-label="Need help">
+                <h3 class="help-text">Need Help?</h3>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:+044-25360345">+044-25360345</a>
+                </div>
+            </i>
+        </div>
+    </header>
+        
+    <main>
+        <div class="contact-intro">
+            <h1>How To Find Us</h1>
+            <p>If you have any questions, just fill in the contact form, and we will answer you shortly. If you are living nearby, come visit us at one of our comfortable offices.</p>
+        </div>
+
+        <div class="contact-locations">
+            <section class="location-card">
+                <h2>Officers Training Academy (OTA)</h2>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:+044-25360345">+044-25360345</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:otaexpertsindia@gmail.com">otaexpertsindia@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <address>Adjutant, OTA, St Thomas Mount, Chennai – 600016</address>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15550.1972618223!2d80.1897867!3d13.0006524!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525e1d6615960f%3A0x78837cb2b80c6c44!2sOfficers%20Training%20Academy!5e0!3m2!1sen!2sin!4v1726471855033!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
+
+            <section class="location-card">
+                <h2>Indian Military Academy</h2>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:+0135-2774178">+0135-2774178</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:gckittingmeasurementima@gmail.com">gckittingmeasurementima@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <address>Indian Military Academy, Prem Nagar, Dehradun</address>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27550.860219100985!2d77.97372!3d30.326570099999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39092a7ea6023923%3A0xc14a6a30f6bf293!2sIndian%20Military%20Academy%2C%20Dehradun%2C%20Uttarakhand!5e0!3m2!1sen!2sin!4v1726472067520!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
+
+            <section class="contact-form-section">
+                <h2>Get in Touch</h2>
+                <form id="contactForm" onsubmit="return validateForm()">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your 10-digit phone number" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a subject</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="recruitment">Recruitment</option>
+                            <option value="training">Training Programs</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="6" placeholder="Enter your message here" required></textarea>
+                    </div>
+
+                    <div class="form-buttons">
+                        <button type="submit" class="submit-btn">Send Message</button>
+                        <button type="reset" class="reset-btn">Reset Form</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+
+
+
+<!-- 
+    js  -->
+
+    <script>
+        function validateForm() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const message = document.getElementById('message').value;
+
+            if (name.length < 3) {
+                alert('Please enter a valid name (minimum 3 characters)');
+                return false;
+            }
+
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(email)) {
+                alert('Please enter a valid email address');
+                return false;
+            }
+
+            const phonePattern = /^[0-9]{10}$/;
+            if (!phonePattern.test(phone)) {
+                alert('Please enter a valid 10-digit phone number');
+                return false;
+            }
+
+            if (message.length < 10) {
+                alert('Please enter a message (minimum 10 characters)');
+                return false;
+            }
+
+            alert('Form submitted successfully!');
+            return false;
+        }
+    </script>
+
+</body>
+</html>
